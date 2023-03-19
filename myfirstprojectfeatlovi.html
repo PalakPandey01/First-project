@@ -10,11 +10,13 @@
         <input type="text" id="Enter_text" name="Enter_text" plaeholder="to print">
         <input type="submit" value="Submit" onclick=performprint()>
        </form>
+       <p id="printing"> </p>
        <script>
         function performprint()
         {
           var p=document.getElementById("Enter_text").value;
           console.log(p);
+          document.getElementById("printing").innerHTML=p;
         }
        </script>
     </body>
