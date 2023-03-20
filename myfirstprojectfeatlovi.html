@@ -8,15 +8,19 @@
        <form id="form" onsubmit="return false;">
         <label for="Enter_text">Enter text:</label>
         <input type="text" id="Enter_text" name="Enter_text" plaeholder="to print">
+        <p>Do me a favour down below?</p>
+        </br>
+        <textarea name="details" id="details" cols="30" rows="10" placeholder="Write something about yourself and i will save it forever!"></textarea>
         <input type="submit" value="Submit" onclick=performprint()>
        </form>
        <p id="printing"> </p>
        <script>
         function performprint()
         {
-          var p=document.getElementById("Enter_text").value;
-          console.log(p);
-          document.getElementById("printing").innerHTML=p;
+          var p=document.getElementById("Enter_text").value;//stores value of textbox into p
+          document.getElementById("printing").innerHTML=p;//prints value of textbox to webpage
+          var q=document.getElementById("details").value;//stores value of textbox into q
+          localStorage.setItem(p,q);//stores value of q into local storage with key as q
         }
        </script>
     </body>
