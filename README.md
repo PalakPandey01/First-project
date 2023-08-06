@@ -1,2 +1,2 @@
 # First-project
- MY BOSS LOVU GAVE ME A SMOL PROJECT BECOZ IM A SMOL CODER
+ A very basic project that I made in HTML as a start off.
